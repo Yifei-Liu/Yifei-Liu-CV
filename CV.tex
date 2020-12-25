@@ -1,0 +1,737 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TeX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \documentclass[a4paper,10pt,oneside]{article}
+%\documentclass[letterpaper,10pt,oneside]{article}
+% change font size
+\documentclass[letterpaper,10pt,oneside]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TYPESETTING OPTIONS.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\TypesetInNonStopMode}{1}
+\newcommand{\TypesetInDraftMode}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{CV-Preamble.tex}
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Yifei Liu}
+\newcommand{\CVTitle}{Yifei Liu Curriculum Vitae}
+\newcommand{\CVNote}{CV updated on {\DatestampYM{2020}{07}} }
+\newcommand{\CVWebpage}{\homepage{http://www.fsl.cs.stonybrook.edu/\textasciitilde yifei/}}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{\CVAuthor}
+
+\begin{subtitle}
+\href{https://www.google.com/maps/place/New+Computer+Science+Stony+Brook+University,+Stony Brook}
+{New CS Building, Room 336, Stony Brook University, Stony Brook, NY}
+\par
+\href{mailto:yifeliu@cs.stonybrook.edu}
+{yifeliu [at] cs [dot] stonybrook [dot] edu}
+\,\SubBulletSymbol\,
+Email me if want my phone no.
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\CVWebpage}
+\end{subtitle}
+
+\begin{body}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Research Interests %%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section
+{Research Interests}
+{Research Interests}
+{PDF:ResearchInterests}
+I am interested in file/storage systems, operating systems and machine learning for systems.
+
+\BigGap
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section
+{Education}
+{Education}
+{PDF:Education}
+\href{https://www.stonybrook.edu/}
+{\textbf{Stony Brook University}}
+\hfill
+Stony Brook, NY
+
+\GapNoBreak
+\BulletItem
+Ph.D. in
+\href{https://www.cs.stonybrook.edu/}
+{Computer Science}
+\hfill
+08/2019 -- Current
+\begin{detail}
+%\SubBulletItem
+%\emph{Thesis (Ongoing)}: Graph-based Metadata Management in Storage Systems (Advised by Prof. Ke Zhou)
+\SubBulletItem
+\emph{Courses}: CSE505 Computing with Logic; CSE506 Operating Systems; CSE512 Machine Learning; CSE544 Probability and Statistics for Data Science.
+\SubBulletItem
+Cumulative GPA: 3.88 / 4.0 
+\end{detail}
+
+\BigGap
+
+\href{http://english.hust.edu.cn/}
+{\textbf{Huazhong University of Science and Technology}}
+\hfill
+Wuhan, Hubei, China
+
+\GapNoBreak
+\BulletItem
+Master of Science (M.Sc.) in
+\href{http://english.wnlo.hust.edu.cn/}
+{Computer System Architecture}
+\hfill
+09/2016 -- 06/2019
+\begin{detail}
+\SubBulletItem
+\emph{Thesis}: Research on Metadata Organization Approach for Image Storage Systems towards Content-based Semantic Similarity Query
+\SubBulletItem
+\emph{Relevant Courses}: Parallel Processing; Theory and Technology of Information Storage; Advanced Computer Architecture; Theory of matrices; Data Mining and Retrieval; Pattern Recognition. 
+\SubBulletItem
+Cumulative GPA: 85.02 / 100 
+\end{detail}
+
+\BigGap
+\href{http://www.hzau.edu.cn/en/HOME.htm}
+{\textbf{Huazhong Agricultural University}}
+\hfill
+Wuhan, Hubei, China
+\GapNoBreak
+\BulletItem
+Bachelor of Engineering (B.Eng.) in
+\href{http://coi.hzau.edu.cn/}
+{Computer Science and Technology}
+\hfill
+09/2012 -- 06/2016
+\begin{detail}
+
+\SubBulletItem
+\emph{Thesis}: Predicting Disk Failures based on Machine Learning Methods
+\SubBulletItem
+\emph{Relevant Courses}: Data Structure; Operating System; Principles of Computer Composition; Computer Networks; Compilers Principles; Algorithm Analysis and Design; Programming and Application of Linux.
+\SubBulletItem
+Cumulative GPA: 3.43 / 4.00 \quad Major GPA: 3.79 / 4.00 \quad Rank: 9/118
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Experience}
+{Experience}
+{PDF:Experience}
+\href{https://www.stonybrook.edu/}
+{\textbf{Stony Brook University}}
+\hfill
+Stony Brook, NY
+
+\emph{Research Assistant}
+\hfill
+05/2020 --
+Current
+\GapNoBreak
+Advisor: Prof. Erez Zadok
+\BulletItem
+Conduct research on file/storage systems and operating systems in File systems and Storage Lab (FSL).
+
+\BigGap
+
+\emph{Teaching Assistant}
+\hfill
+08/2019 --
+05/2020
+
+\GapNoBreak
+\BulletItem
+TA for CSE376 Advanced Systems Programming in Unix/C (Spring 2020)
+\BulletItem
+TA for CSE306 Operating Systems (Fall 2019)
+
+
+\BigGap
+\href{http://english.wnlo.hust.edu.cn/}
+{\textbf{Wuhan National Laboratory for Optoelectronics}}
+\hfill
+Wuhan, Hubei, China
+
+\emph{Master's Student/Research Assistant}
+\hfill
+09/2016 --
+06/2019
+\GapNoBreak
+Advisor: Prof. Ke Zhou
+
+\GapNoBreak
+\BulletItem
+Used deep learning hash to design and implement a metadata system for integration of high-precision and low-latency semantic queries in storage systems
+
+\GapNoBreak
+\BulletItem
+Proposed a framework for assessing image ``dark data'' based on a novel semantic hash ranking (SHR) algorithm
+
+\GapNoBreak
+\BulletItem
+Performed theoretical analysis on hash-based graphs to facilitate rank algorithms and graph database operations
+
+%\begin{detail}
+%\SubBulletItem
+%Project:
+%Investigations on the Use of Lasers to Measure Climate Change
+%\SubBulletItem
+%Supervisors:
+%Professor Jane Citizen and
+%Dr Ann Yone
+%\SubBulletItem
+%Research areas:
+%Climate change, lasers, statistical analysis, data analytics.
+%\end{detail}
+
+%Tencent
+\BigGap
+\href{https://www.tencent.com/en-us/index.html}
+{\textbf{Tencent}} (\#1 social media, Internet corporation in Asia)
+\hfill
+Shenzhen, Guangdong, China
+
+\emph{Backend Developer Intern}
+\hfill
+12/2015 --
+08/2016
+\GapNoBreak
+\BulletItem
+Predicted disk failures with disk data collected via machine learning algorithms to achieve high precision and recall
+
+\GapNoBreak
+\BulletItem
+Built infrastructure for collecting long-term disk S.M.R.A.T. data from over 10,000 servers in Tencent data centers
+
+\GapNoBreak
+\BulletItem
+Tested cache replacement policies on Tencent application traces
+
+%ICT,CAS
+\BigGap
+\href{http://english.ict.cas.cn/}
+{\textbf{Institute of Computing Technology, Chinese Academy of Sciences}}
+\hfill
+Beijing, China
+
+\emph{Intern/Visiting Student}
+\hfill
+11/2015 --
+12/2015
+\GapNoBreak
+\BulletItem
+Explored the correlation between Apache Spark and Java Garbage Collection (GC) parameters
+
+%Chinasoft International
+\BigGap
+\href{http://www.chinasofti.com/en/index.shtml}
+{\textbf{Chinasoft International Ltd}}
+\hfill
+Guangzhou, Guangdong, China
+
+\emph{Front-end Student Intern}
+\hfill
+07/2015 --
+08/2015
+\GapNoBreak
+\BulletItem
+Collaborated with other interns to develop a catering website using jQuery, AJAX, Java Servlet
+
+%Huazhong Agricultural University
+\BigGap
+\href{http://www.hzau.edu.cn/en/HOME.htm}
+{\textbf{Huazhong Agricultural University}}
+\hfill
+Wuhan, Hubei, China
+
+\emph{Undergraduate Research Assistant}
+\hfill
+11/2014 --
+06/2015
+\GapNoBreak
+Supervisors: Prof. Jianxiao Liu and Prof. Ruifang Zhai
+\GapNoBreak
+\BulletItem
+Used Bayesian Network Reasoning to propose a web service recommendation approach for organizing and recommending a set of correlated services
+
+\GapNoBreak
+\BulletItem
+Designed an image line detection algorithm for automatically measuring character parameters of the rapeseed plant
+
+\GapNoBreak
+\BulletItem
+Developed a GUI for counting the number of cotton cells in microscopic images (for the Huazhong Agricultural University's College of Plant Science \& Technology)
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\iffalse
+\subsection
+{Journals}
+{Journals}
+{PDF:Journals}
+
+\GapNoBreak
+\NumberedItem{[11]}
+\href{http://www.example.com/my-paper-doi-5}
+{\underline{J.~Doe}, J.~Citizen, and A.~Yone,
+``On lasers and climate change,''
+\textit{Journal of Science},
+vol.~89,
+no.~2,
+pp.~4123--4133,
+\DatestampYM{2008}{02}.}
+
+% Note the use of {\CharSpace} for aligning shorter numbers.
+\Gap
+\NumberedItem{{\CharSpace}[1]}
+\href{http://www.example.com/my-paper-doi-4}
+{\underline{J.~Doe} and J.~Citizen,
+``Measuring the extent of climate change,''
+\textit{Global Scientific Journal},
+vol.~12,
+no.~4,
+pp.~330--352,
+\DatestampYM{2006}{12}.}
+\fi
+
+%\BigGap
+%\subsection
+%{Conferences}
+%{Conferences}
+%{PDF:Conferences}
+
+%\GapNoBreak
+%SwiftGraph Paper
+%\NumberedItem{[5]}
+%\underline{J.~Doe}, J.~Citizen, and A.~Yone,
+%``On lasers and climate change,''
+%in \textit{Proceedings of the Laser Symposium},
+%Las Vegas, Nevada, USA,
+%\DatestampYM{2007}{01}.
+\subsection
+{Journal Articles}
+{Journal Articles}
+{PDF:JournalArticles}
+\GapNoBreak
+
+\NumberedItem{[1]}
+Ke Zhou, Yangtao Wang, Yu Liu, Yujuan Yang, \underline{Yifei Liu}, Guoliang Li, Lianli Gao, and Zhili Xiao.
+``A Framework for Image Dark Data Assessment.'' 
+World Wide Web Journal (WWWJ),
+\DatestampY{2020}.
+
+\BigGap
+\NumberedItem{[2]}
+\href{https://www.sciencedirect.com/science/article/pii/S0167739X19302304}
+Yu Liu, Yangtao Wang, Ke Zhou, Yujuan Yang, and \underline{Yifei Liu}.
+``Semantic-aware Data Quality Assessment for Image Big Data.'' 
+Future Generation Computer Systems (FGCS),
+\DatestampY{2020}.
+\BigGap
+\GapNoBreak
+
+\subsection
+{Conference Papers}
+{Conference Papers}
+{PDF:ConferencePapers}
+\GapNoBreak
+
+\NumberedItem{[1]}
+Yu Liu, Hong Jiang, Yangtao Wang, Ke Zhou, \underline{Yifei Liu}, and Li Liu.
+``Content Sifting Storage: Achieving Fast Read for Large-scale Image Dataset Analysis.''
+In \textit{Proceedings of the 57th Design Automation Conference (DAC)}, San Francisco, CA,
+\DatestampY{2020}.
+
+%Graph Analysis Paper
+\BigGap
+\NumberedItem{[2]}
+\href{https://link.springer.com/chapter/10.1007/978-3-030-26072-9_22}
+Yangtao Wang, Yu Liu, \underline{Yifei Liu}, Ke Zhou, Yujuan Yang, Jiangfeng Zeng, Xiaodong Xu, and Zhili Xiao.
+``Analysis and Management to Hash-Based Graph and Rank.''
+In \textit{Proceedings of the 3rd APWeb-WAIM joint conference on Web and Big Data (APWeb-WAIM)}, Chengdu, China,
+\DatestampY{2019}.
+
+%dark data paper
+\BigGap
+\NumberedItem{[3]}
+\href{https://link.springer.com/chapter/10.1007/978-3-030-26072-9_1}
+Yu Liu, Yangtao Wang, Ke Zhou, Yujuan Yang, \underline{Yifei Liu}, Jingkuan Song, and Zhili Xiao.
+``A Framework for Image Dark Data Assessment.''
+In \textit{Proceedings of the 3rd APWeb-WAIM joint conference on Web and Big Data (APWeb-WAIM)}, Chengdu, China,
+\DatestampY{2019}.
+
+%SCC 2018
+\BigGap
+\NumberedItem{[4]}
+\href{https://link.springer.com/chapter/10.1007/978-3-319-94376-3_2}
+{Jianxiao Liu, Zonglin Tian, \underline{Yifei Liu}, and Liang Zhao.
+``Research of Web Service Recommendation Using Bayesian Network Reasoning.''
+In \textit{Proceedings of the 15th International Conference on Services Computing (SCC)},
+Seattle, WA,
+\DatestampY{2018}.}
+
+% Note the use of {\CharSpace} for aligning shorter numbers.
+%Agro-Geoinformatics
+\BigGap
+\NumberedItem{[5]}
+\href{https://ieeexplore.ieee.org/abstract/document/7248122/}
+{Pujuan Shi, \underline{Yifei Liu}, Yihang Fang, Chengda Lin, and Ruifang Zhai.
+``A new line detection algorithm - Automatic measurement of character parameter of rapeseed plant by LSD.''
+In \textit{Proceedings of the 4th International Conference on Agro-Geoinformatics (Agro-Geoinformatics)},
+Istanbul, Turkey,
+\DatestampY{2015}.}
+
+%%%%%%%%%%%%%%%%%%%%%
+%% ACADEMIC AWARDS %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Competition Awards}
+{Competition Awards}
+{PDF:CompetitionAwards}
+
+\BulletItem
+Second Prize, National Postgraduate Mathematic Contest in Modeling, China
+\hfill
+12/2016
+%\begin{detail}
+%\SubItem
+%Winning rate 
+%(\textbf{1732/8894 \textasciitilde19.47\%})
+%\end{detail}
+\GapNoBreak
+
+\BulletItem
+Finalist, Interdisciplinary Contest in Modeling (MCM/ICM), USA
+\hfill
+04/2015
+\begin{detail}
+\SubItem
+One of 52 awardees in the world. First winner of my university. (\textbf{52/9773 \textasciitilde0.53\%})
+\end{detail}
+
+\Gap
+\BulletItem
+First Prize, National Postgraduate Mathematic Contest in Modeling, China
+\hfill
+12/2014
+\begin{detail}
+\SubItem
+Won the highest award of this contest, 
+(\textbf{120/4900 \textasciitilde2.4\%}) 
+\end{detail}
+
+\Gap
+\BulletItem
+First Prize, Contemporary Undergraduate Mathematical Contest in Modeling, China
+\hfill
+11/2014
+\begin{detail}
+\SubItem
+Won the highest award of this contest,
+(\textbf{293/22233 \textasciitilde1.3\%})
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%
+%% OTHER AWARDS %%
+%%%%%%%%%%%%%%%%%%
+
+\section
+{Academic Awards}
+{Academic Awards}
+{PDF:AcademicAwards}
+
+\subsection
+{Huazhong University of Science and Technology}
+{Huazhong University of Science and Technology}
+{PDF:HUST}
+\GapNoBreak
+
+\BulletItem
+APWeb-WAIM Best Paper Runner-Up
+\hfill
+\DatestampY{2019}
+
+\GapNoBreak
+
+\BulletItem
+Outstanding Graduate
+\hfill
+Spring \DatestampY{2019}
+
+\GapNoBreak
+
+\BulletItem
+Merit Graduate Student
+\hfill
+\DatestampY{2017} --
+\DatestampY{2019}
+
+\GapNoBreak
+\BulletItem
+First-class Academic Scholarship
+\hfill
+\DatestampY{2016} --
+\DatestampY{2019}
+\BigGap
+\GapNoBreak
+\subsection
+{Huazhong Agricultural University}
+{Huazhong Agricultural University}
+{PDF:HZAU}
+
+\BulletItem
+Outstanding Graduate
+\hfill
+Spring \DatestampY{2016}
+
+\GapNoBreak
+\BulletItem
+First Scholarship for Study 
+ %(\textasciitilde 4/118)
+\hfill
+Spring \DatestampY{2015}
+
+\GapNoBreak
+\BulletItem
+Merit Undergraduate Student
+\hfill
+\DatestampY{2014} --
+\DatestampY{2016}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROFESSIONAL AFFILIATIONS & ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+\iffalse
+\section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+English: Native language.
+
+\GapNoBreak
+\BulletItem
+Spanish: Fluent (speaking, reading, writing).
+
+\GapNoBreak
+\BulletItem
+Latin: Intermediate (reading); basic (speaking, writing).
+\fi
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\section
+{Technical Skills}
+{Technical Skills}
+{PDF:TechnicalSkills}
+
+%\subsection
+%{Technical Skills}
+%{Technical Skills}
+%{PDF:TechnicalSkills}
+%\GapNoBreak
+\subsection
+{Programming Languages}
+{Programming Languages}
+{PDF:ProgrammingLanguages}
+\GapNoBreak
+\BulletItem
+$\geq$ 4 years: C/C++/Python
+\GapNoBreak
+\BulletItem
+$\geq$ 3 years: MATLAB/Bash/SQL
+
+\GapNoBreak
+\BulletItem
+1 {\textasciitilde} 2 years: JAVA/Cypher
+
+\GapNoBreak
+\BulletItem
+$\leq$ 1 year: JavaScript/Prolog
+\BigGap
+\GapNoBreak
+\subsection
+{Softwares and Frameworks}
+{Softwares and Frameworks}
+{PDF:SoftwaresandFrameworks}
+\GapNoBreak
+\BulletItem
+Parallel Computing: Hadoop, Spark
+
+\GapNoBreak
+\BulletItem
+File and Storage: OpenStack Swift, HDFS, Redis, Extended File System (ext)
+
+\GapNoBreak
+\BulletItem
+Databases: HBase, MySQL, Neo4j
+
+\GapNoBreak
+\BulletItem
+Deep learning platforms: Caffe, TensorFlow
+
+\GapNoBreak
+\BulletItem
+Tools: Linux, git, gcc, gdb, pdb, Makefile, Scikit-learn, Sqoop,
+{\LaTeX}
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\section
+{Professional Training}
+{Professional Training}
+{PDF:ProfessionalTraining}
+
+Machine Learning - Stanford Univeristy (2016), Coursera
+
+
+%%%%%%%%%%%%%%%
+%% TestScore %%
+%%%%%%%%%%%%%%%
+
+%\section
+%{Test Score}
+%{Test Score}
+%{PDF:TestScore}
+%\textbf{GRE}: 
+%Total 323 + 3.5 (Verbal 157 + Quantitative 166 + Analytical Writing %3.5)
+
+%\GapNoBreak
+
+%\BigGap
+%\textbf{TOEFL}:
+%Total 94 (Reading 28 + Listening 24 + Speaking 20 + Writing 22)
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+\iffalse
+\section
+{References}
+{References}
+{PDF:References}
+
+\BulletItem
+\textbf{Ke Zhou}
+\newline
+Professor
+\newline
+School of Computer Science and Technology
+\newline
+Huazhong University of Science and Technology
+\begin{detail}
+\SubItem
+%1000 First Avenue, Springfield, Massachusetts 22222, USA
+%\newline
+\href{k.zhou@hust.edu.cn}
+{k.zhou@hust.edu.cn}
+\,\SubBulletSymbol\,
++86\,139-7107-5916
+\end{detail}
+\fi
+
+\end{body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\begin{flushright}
+\UseNoteFont%
+[\textit{\CVNote}]%
+\hspace{2.0mm}\null
+\end{flushright}
+
+\label{LastPage}~
+\end{document}
