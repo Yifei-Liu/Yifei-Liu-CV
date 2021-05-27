@@ -11,11 +11,12 @@
 \fi
 
 % Geometry package for page margins.
+% 05/27/2021 Set 1 inch margins for 4 sides
 \usepackage[
-left=0.70in,
-right=0.70in,
-top=0.60in,
-bottom=0.45in,
+left=1.0in,
+right=1.0in,
+top=1.0in,
+bottom=1.0in,
 nohead,
 includefoot]{geometry}
 
@@ -117,11 +118,17 @@ includefoot]{geometry}
 % and can be downloaded for free at <http://www.fontsquirrel.com/fonts/tinos>.
 % Symbol table: <http://www.fileformat.info/info/unicode/font/tinos/grid.htm>
 \setmainfont
-[Path=./Fonts/Tinos/,
-ItalicFont=Tinos-Italic,
-BoldFont=Tinos-Bold,
-BoldItalicFont=Tinos-BoldItalic]
-{Tinos-Regular.ttf}
+[Path=./Fonts/TimesNewRoman/,
+ItalicFont=times-new-roman-italic,
+BoldFont=times-new-roman-bold,
+BoldItalicFont=times-new-roman-bold-italic]
+{times-new-roman.ttf}
+
+%[Path=./Fonts/Tinos/,
+%ItalicFont=Tinos-Italic,
+%BoldFont=Tinos-Bold,
+%BoldItalicFont=Tinos-BoldItalic]
+%{Tinos-Regular.ttf}
 
 % Secondary font: "GNU FreeFont".
 % The "GNU FreeFont" fonts are released under the
