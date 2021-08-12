@@ -44,7 +44,7 @@
 \newcommand{\CVAuthor}{Yifei Liu}
 \newcommand{\CVTitle}{Yifei Liu Curriculum Vitae}
 \newcommand{\CVNote}{CV updated on {\DatestampYM{2021}{05}} }
-\newcommand{\CVWebpage}{\homepage{http://www.fsl.cs.stonybrook.edu/\textasciitilde yifei/}}
+\newcommand{\CVWebpage}{\homepage{https://www.fsl.cs.stonybrook.edu/\textasciitilde yifei/}}
 
 % PDF settings and properties.
 \hypersetup{
@@ -59,10 +59,9 @@ bookmarks=true,
 unicode=true,
 bookmarksopen=true,
 pdfstartview=FitH,
-pdfpagelayout=OneColumn,
-pdfpagemode=UseOutlines,
-hidelinks,
-breaklinks}
+pdfpagelayout=OneColumn
+pdfpagemode=UseOutlines, hidelinks, breaklinks
+}
 
 % Shorthand.
 \newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
@@ -104,11 +103,10 @@ Timezone: US/Eastern
 %% Research Interests %%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \section
-{Research Interests}
-{Research Interests}
-{PDF:ResearchInterests}
-File/Storage Systems, Operating Systems, and Machine Learning for Systems.
-
+{Biography}
+{Biography}
+{PDF:Biography}
+I am a Ph.D. student in Computer Science at Stony Brook University advised by Prof. Erez Zadok and a Research Assistant at the File systems and Storage Lab (FSL).  My research interests include file/storage systems, operating systems, and machine learning for systems. I am currently seeking an SDE or research internship in the summer of 2022.
 
 \BigGap
 
@@ -134,6 +132,8 @@ Ph.D. in
 08/2019 -- Present
 \begin{detail}
 \BulletItem
+Advisor: Prof. Erez Zadok
+\BulletItem
 CGPA: 3.91 / 4.0 
 \BulletItem
 \emph{Courses}: CSE505 Computing with Logic; CSE506 Operating Systems; 
@@ -158,6 +158,8 @@ M.Sc. in
 09/2016 -- 06/2019
 \begin{detail}
 \BulletItem
+Advisor: Prof. Ke Zhou
+\BulletItem
 CGPA: 85.02 / 100 
 %\SubBulletItem
 %\emph{Relevant Courses}: Parallel Processing; Theory and Technology of Information Storage; Advanced Computer Architecture; Theory of matrices; Data Mining and Retrieval; Pattern Recognition. 
@@ -178,7 +180,6 @@ B.Eng. in
 \hfill
 09/2012 -- 06/2016
 \begin{detail}
-
 \BulletItem
 CGPA: 3.43 / 4.00 \quad Major GPA: 3.79 / 4.00 \quad Rank: 9/118
 %\SubBulletItem
@@ -205,11 +206,11 @@ Stony Brook, NY
 05/2020 --
 Present
 \GapNoBreak
-Advisor: Prof. Erez Zadok
 \BulletItem
-Design and benchmark multi-tier caching systems with intelligent MRC analysis. 
+Design and benchmark multi-tier caching systems with intelligent MRC analysis
+\GapNoBreak
 \BulletItem
-Apply model checking to verify file systems formally and automatically.
+Apply model checking to verify file systems formally and automatically
 
 \BigGap
 %\href{https://www.stonybrook.edu/}
@@ -224,6 +225,7 @@ Stony Brook, NY
 \GapNoBreak
 \BulletItem
 CSE376 Advanced Systems Programming in Unix/C (S' 21, S'20). Instructor: Prof. Erez Zadok
+\GapNoBreak
 \BulletItem
 CSE306 Operating Systems (F'19). Instructor: Prof. Eugene Stark
 
@@ -238,9 +240,6 @@ Wuhan, China
 \hfill
 09/2016 --
 06/2019
-\GapNoBreak
-Advisor: Prof. Ke Zhou
-
 \GapNoBreak
 \BulletItem
 Used deep learning hash to design and implement a metadata system for integration of high-precision and low-latency content-based semantic queries in storage systems
@@ -330,8 +329,6 @@ Wuhan, China
 \hfill
 11/2014 --
 06/2015
-\GapNoBreak
-Supervisors: Prof. Jianxiao Liu and Prof. Ruifang Zhai
 \GapNoBreak
 \BulletItem
 Used Bayesian Network Reasoning to propose a web service recommendation approach for organizing and recommending a set of correlated services
@@ -442,13 +439,15 @@ Yu Liu, Yangtao Wang, Ke Zhou, Yujuan Yang, and \underline{Yifei Liu}.
 \GapNoBreak
 
 \subsection
-{Conference Papers}
-{Conference Papers}
+{Conference and Workshop Papers}
+{Conference and Workshop Papers}
 {PDF:ConferencePapers}
 \GapNoBreak
 \NumberedItem{[1]}
-Wei Su, \underline{Yifei Liu}, Gomathi Ganesan, Gerard Holzmann, Geoff Kuenning, Scott Smolka, and Erez Zadok.
-``Model-Checking Support for File System Development.'' (Under Review)
+Wei Su, \underline{Yifei Liu}, Gomathi Ganesan, Gerard Holzmann, Scott Smolka, Erez Zadok and Geoff Kuenning.
+``Model-Checking Support for File System Development.''
+In \textit{Proceedings of the 13th ACM Workshop on Hot Topics in Storage and File Systems (HotStorage)}, Virtual,
+\DatestampY{2021}.
 
 \BigGap
 \NumberedItem{[2]}
@@ -490,7 +489,7 @@ Seattle, WA,
 \BigGap
 \NumberedItem{[6]}
 %\href{https://ieeexplore.ieee.org/abstract/document/7248122/}
-{Pujuan Shi, \underline{Yifei Liu}, Yihang Fang, Chengda Lin, and Ruifang Zhai.
+{Pujuan Shi, Yihang Fang, Chengda Lin, \underline{Yifei Liu} and Ruifang Zhai.
 ``A new line detection algorithm - Automatic measurement of character parameter of rapeseed plant by LSD.''
 In \textit{Proceedings of the 4th International Conference on Agro-Geoinformatics (Agro-Geoinformatics)},
 Istanbul, Turkey,
@@ -506,13 +505,14 @@ Istanbul, Turkey,
 
 \NumberedItem{[1]}
 %\href{https://patents.google.com/patent/CN110413807B}
-Ke Zhou, \underline{Yifei Liu}, Yu Liu, Yangtao Wang, and Yujuan Yang. A kind of image inquiry method and system based on contents semantic metadata. Chinese patent No. CN110413807B, Filed June, 2019. Granted April, 2021.
+Ke Zhou, \underline{Yifei Liu}, Yu Liu, Yangtao Wang, and Yujuan Yang. A kind of image inquiry method and system based on contents semantic metadata. Chinese patent CN110413807B, Filed June, 2019. Granted April, 2021.
 
 %Graph Analysis Paper
 \BigGap
 \NumberedItem{[2]}
 %\href{https://patents.google.com/patent/CN110390352A}
-Ke Zhou, Yu Liu, Yujuan Yang, Hua Wang, Chunhua Li, Yangtao Wang, and \underline{Yifei Liu}. A kind of dark data value appraisal procedure of image based on similitude Hash. CN110390352A, June 2019. (Under substantive examination)
+Ke Zhou, Yu Liu, Yujuan Yang, Hua Wang, Chunhua Li, Yangtao Wang, and \underline{Yifei Liu}. Method for valuation of image dark data based on similarity hashing. US patent US20200410304A1, Filed June 2019. (Under  examination)
+\GapNoBreak
 
 %%%%%%%%%%%%%%%%%%%%%
 %% PRESENTATIONS %%
@@ -522,10 +522,86 @@ Ke Zhou, Yu Liu, Yujuan Yang, Hua Wang, Chunhua Li, Yangtao Wang, and \underline
 {Talks}
 {PDF:Talks}
 \BulletItem
+\emph{Model-Checking Support for File System Development}, ACM HotStorage 2021, Virtual. (Joint talk w/ Wei Su)
+\GapNoBreak
+\BulletItem
 \emph{OS Support for File System Model Checking}, 
 Computer Science Graduate Research Day 2021, Stony Brook, NY.
 \GapNoBreak
 
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+%\subsection
+%{Technical Skills}
+%{Technical Skills}
+%{PDF:TechnicalSkills}
+%\GapNoBreak
+
+\subsection
+{Programming Languages}
+{Programming Languages}
+{PDF:ProgrammingLanguages}
+\GapNoBreak
+\BulletItem
+Familiar ($\geq$ 4 years of experience): C, C++, Python
+
+\GapNoBreak
+\BulletItem
+Intermediate (1 {\textasciitilde} 3 years): MATLAB, Bash, SQL, Java, Cypher
+
+\GapNoBreak
+\BulletItem
+Basic ($\leq$ 1 year): JavaScript, Prolog
+\BigGap
+\GapNoBreak
+\subsection
+{Technologies}
+{Technologies}
+{PDF:Technologies}
+
+\GapNoBreak
+\BulletItem
+\textbf{Databases:} MySQL (3 years), Neo4j (2 years), DB2 ($<$ 1 year), HBase ($<$ 1 year)
+
+\GapNoBreak
+\BulletItem
+\textbf{File and Storage:} Linux VFS (2 years), OpenStack Swift (2 years), HDFS ($<$ 1 year)
+
+
+%\GapNoBreak
+%\BulletItem
+%Deep learning platforms: Caffe, TensorFlow
+
+\GapNoBreak
+\BulletItem
+\textbf{Operating Systems:} Linux (6 years), Windows 10 (4 years), MacOS (2 years), Linux kernel development (1 year)
+
+
+\GapNoBreak
+\BulletItem
+\textbf{Parallel Computing:} Hadoop (1 year), Spark ($<$ 1 year)
+
+\GapNoBreak
+\BulletItem
+\textbf{Tools:} VSCode (5 years), Git (3 years), Vim (3 years), Makefile (3 years), {\LaTeX} (3 years), GDB (2 years), Elasticsearch (1 year), CMake (1 year), Scikit-learn (1 year)
+
+\BigGap
+\subsection
+{Human Languages}
+{Human Languages}
+{PDF:HumanLanguages}
+\GapNoBreak
+\BulletItem
+Chinese (Native), English (Fluent)
+\GapNoBreak
 
 %%%%%%%%%%%%%%%%%%%%%
 %% ACADEMIC AWARDS %%
@@ -676,77 +752,7 @@ Spanish: Fluent (speaking, reading, writing).
 \BulletItem
 Latin: Intermediate (reading); basic (speaking, writing).
 \fi
-%%%%%%%%%%%%
-%% SKILLS %%
-%%%%%%%%%%%%
 
-\section
-{Skills}
-{Skills}
-{PDF:Skills}
-
-%\subsection
-%{Technical Skills}
-%{Technical Skills}
-%{PDF:TechnicalSkills}
-%\GapNoBreak
-
-\subsection
-{Programming Languages}
-{Programming Languages}
-{PDF:ProgrammingLanguages}
-\GapNoBreak
-\BulletItem
-Familiar ($\geq$ 4 years of experience): C, C++, Python
-
-\GapNoBreak
-\BulletItem
-Intermediate (1 {\textasciitilde} 3 years): MATLAB, Bash, SQL, Java, Cypher
-
-\GapNoBreak
-\BulletItem
-Basic ($\leq$ 1 year): JavaScript, Prolog
-\BigGap
-\GapNoBreak
-\subsection
-{Technologies}
-{Technologies}
-{PDF:Technologies}
-
-\GapNoBreak
-\BulletItem
-\textbf{Databases:} MySQL (3 years), Neo4j (2 years), DB2 ($<$ 1 year), HBase ($<$ 1 year)
-
-\GapNoBreak
-\BulletItem
-\textbf{File and Storage:} Linux VFS (2 years), OpenStack Swift (2 years), HDFS ($<$ 1 year)
-
-
-%\GapNoBreak
-%\BulletItem
-%Deep learning platforms: Caffe, TensorFlow
-
-\GapNoBreak
-\BulletItem
-\textbf{Operating Systems:} Linux (6 years), Windows 10 (4 years), MacOS (2 years), Linux kernel development (1 year)
-
-
-\GapNoBreak
-\BulletItem
-\textbf{Parallel Computing:} Hadoop (1 year), Spark ($<$ 1 year)
-
-\GapNoBreak
-\BulletItem
-\textbf{Tools:} VSCode (5 years), Git (3 years), Vim (3 years), Makefile (3 years), {\LaTeX} (3 years), GDB (2 years), Elasticsearch (1 year), CMake (1 year), Scikit-learn (1 year)
-
-\BigGap
-\subsection
-{Human Languages}
-{Human Languages}
-{PDF:HumanLanguages}
-\GapNoBreak
-\BulletItem
-Chinese (Native), English (Fluent)
 
 %%%%%%%%%%%%%%%
 %% INTERESTS %%
@@ -810,11 +816,11 @@ Huazhong University of Science and Technology
 % CV NOTE %
 %%%%%%%%%%%
 
-\begin{flushright}
-\UseNoteFont%
-[\textit{\CVNote}]%
-\hspace{2.0mm}\null
-\end{flushright}
+%\begin{flushright}
+%\UseNoteFont%
+%[\textit{\CVNote}]%
+%\hspace{2.0mm}\null
+%\end{flushright}
 
 \label{LastPage}~
 \end{document}
