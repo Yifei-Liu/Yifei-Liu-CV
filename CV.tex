@@ -25,7 +25,9 @@
 %\documentclass[letterpaper,10pt,oneside]{article}
 % change font size
 \documentclass[letterpaper,10pt,oneside]{article}
-
+% \documentclass[letterpaper,10pt,oneside]{moderncv}
+% \moderncvstyle{classic}  % Choose the style, options include: 'casual' (default), 'classic', 'oldstyle', 'banking'
+% \moderncvcolor{black}     % Choose the color, options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey', 'black'
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% TYPESETTING OPTIONS.
@@ -37,31 +39,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% PREAMBLE.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \input{CV-Preamble.tex}
+
 
 % CV Info (to be customized).
 \newcommand{\CVAuthor}{Yifei Liu}
 \newcommand{\CVTitle}{Yifei Liu Curriculum Vitae}
-\newcommand{\CVNote}{CV updated on {\DatestampYM{2021}{05}} }
-\newcommand{\CVWebpage}{\homepage{https://www.fsl.cs.stonybrook.edu/\textasciitilde yifei/}}
+\newcommand{\CVNote}{CV updated on {\DatestampYM{2023}{06}} }
+% \newcommand{\CVWebpage}{\homepage{https://www.fsl.cs.stonybrook.edu/\textasciitilde yifei/}}
 
-% PDF settings and properties.
-\hypersetup{
-pdftitle={\CVTitle},
-pdfauthor={\CVAuthor},
-pdfsubject={\CVWebpage},
-pdfcreator={XeLaTeX},
-pdfproducer={},
-pdfkeywords={},
-pdfpagemode={},
-bookmarks=true,
-unicode=true,
-bookmarksopen=true,
-pdfstartview=FitH,
-pdfpagelayout=OneColumn
-pdfpagemode=UseOutlines, hidelinks, breaklinks
-}
 
 % Shorthand.
 \newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
@@ -71,6 +57,23 @@ pdfpagemode=UseOutlines, hidelinks, breaklinks
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+
+% PDF settings and properties.
+\hypersetup{
+ pdftitle={\CVTitle},
+ pdfauthor={\CVAuthor},
+% pdfsubject={\CVWebpage},
+ pdfcreator={XeLaTeX},
+ pdfproducer={},
+ pdfkeywords={},
+% pdfpagemode={},
+% bookmarks=true,
+ unicode=true,
+ bookmarksopen=true
+% pdfstartview=FitH,
+% pdfpagelayout=OneColumn,
+% pdfpagemode=UseOutlines, hidelinks, breaklinks
+}
 
 %%%%%%%%%%%%%%%
 % TITLE BLOCK %
@@ -87,15 +90,15 @@ Cell: +1 631-710-8377
 \href{mailto:yifeliu@cs.stonybrook.edu}
 {yifeliu@cs.stonybrook.edu}
 \,\BulletSymbol\,
-\href{\CVWebpage}
-{\CVWebpage}
+\href{https://www.fsl.cs.stonybrook.edu/~yifei/}
+{https://www.fsl.cs.stonybrook.edu/\textasciitilde yifei/}
 \,\BulletSymbol\,
 \href{https://www.linkedin.com/in/yifei-liu/}
 {linkedin.com/in/yifei-liu/}
-\newline
-Visa: F-1 Student
-\,\BulletSymbol\,
-Timezone: US/Eastern
+%\newline
+%Visa: F-1 Student
+%\,\BulletSymbol\,
+%Timezone: US/Eastern
 \end{subtitle}
 
 \begin{body}
@@ -119,7 +122,7 @@ Ph.D. in
 08/2019 -- Present
 \begin{detail}
 \BulletItem
-CGPA: 3.91 / 4.0 
+CGPA: 3.93 / 4.0 
 \BulletItem
 \emph{Relevant Courses}: CSE506 Operating Systems; 
 CSE512  Machine Learning; CSE532 Theory of Database Systems; CSE548 Analysis of Algorithms
@@ -166,7 +169,8 @@ B.Eng. in
 {Experience}
 {PDF:Experience}
 %File systems and Storage Lab (FSL)
-{\textbf{File systems and Storage Lab (FSL), Stony Brook University}}
+\href{https://www.fsl.cs.stonybrook.edu/}
+{{\textbf{File systems and Storage Lab (FSL), Stony Brook University}}}
 \hfill
 Stony Brook, NY
 
@@ -232,6 +236,9 @@ Shenzhen, China
 12/2015 --
 08/2016
 
+\GapNoBreak
+\BulletItem
+Worked in the Cloud Block Storage (CBS) team of the Cloud Foundation Department, Technology Engineering Group (TEG)
 \GapNoBreak
 \BulletItem
 Predicted disk failures with disk data collected via machine learning algorithms to achieve high precision and recall
@@ -310,7 +317,7 @@ Ke Zhou, \underline{Yifei Liu}, Yu Liu, Yangtao Wang, and Yujuan Yang. A kind of
 {Talks}
 {PDF:Talks}
 \BulletItem
-\emph{Model-Checking Support for File System Development}, ACM HotStorage 2021, Virtual. (Joint talk w/ Wei Su)
+\emph{Model-Checking Support for File System Development}, ACM HotStorage 2021, Virtual. (Joint talk with Wei Su)
 \BulletItem
 \emph{OS Support for File System Model Checking}, 
 Computer Science Graduate Research Day 2021, Stony Brook, NY.

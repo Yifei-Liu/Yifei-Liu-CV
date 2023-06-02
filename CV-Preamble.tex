@@ -25,9 +25,9 @@ nohead,
 includefoot]{geometry}
 
 % PDF settings and properties.
-\usepackage{hyperref}
 \usepackage{apacite}
-
+% moderncv loads the package hyperref by itself with its own hypersetup. From moderncv.cls
+\usepackage[hidelinks]{hyperref}
 
 % Long table for page layout.
 \usepackage{longtable}
@@ -37,7 +37,7 @@ includefoot]{geometry}
 \usepackage[none]{hyphenat}
 
 % Colors.
-\usepackage[usenames]{color}
+% \usepackage[usenames]{color}
 % \definecolor{MyDarkBlue}{RGB}{0,90,160}
 % {\color{MyDarkBlue}This text is dark blue}
 
@@ -125,6 +125,9 @@ includefoot]{geometry}
 \usepackage{xunicode}
 \usepackage{xltxtra}
 
+% \homepage
+% \usepackage{moderncv}
+
 \usepackage{unicode-math}
 % Font: Use "Tinos" as the main typeface (\textnormal{}, \normalfont).
 % The "Tinos" fonts are released under the Apache License Version 2.0,
@@ -177,14 +180,15 @@ BoldItalicFont=FreeSerifBoldItalic]
 \renewcommand{\scshape}{\sffamily}
 %\renewcommand{\textsc}[1]{\textbf{\MakeUppercase{#1}}}
 
+
 % Font styles.
 \newcommand{\UseHeadingFont}{\normalfont}
 \newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{8.2pt}{9.5pt}\selectfont}
 \newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{10pt}{12pt}\selectfont}
 \newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{28pt}{33.6pt}\selectfont\bfseries}
 \newcommand{\UseSubTitleFont}{\normalfont\fontsize{10pt}{12pt}\selectfont}
-\newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{11pt}{13.2pt}\selectfont\bfseries}
-\newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{10t}{12pt}\selectfont\bfseries}
+\newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{12.5pt}{15pt}\selectfont\bfseries}
+\newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{10pt}{12pt}\selectfont\bfseries}
 \newcommand{\UseDetailFont}{\normalfont\fontsize{10pt}{12pt}\selectfont}
 
 % Symbols (unicode).
@@ -250,7 +254,14 @@ BoldItalicFont=FreeSerifBoldItalic]
 &}
 
 % Macro: subsection.
-\renewcommand{\subsection}[3]{\par~\vskip-\baselineskip%
+% \renewcommand{\subsection}[3]{\par~\vskip-\baselineskip%
+% \pdfbookmark[3]{#2}{#3}\par%
+% {\UseSubSectionFont\raggedright{#1}}%
+% \vspace{0.225\baselineskip}}
+
+\renewcommand{\subsection}[3]{
+\par~\vskip-\baselineskip%
+\vspace{0.225\baselineskip}
 \pdfbookmark[3]{#2}{#3}\par%
 {\UseSubSectionFont\raggedright{#1}}%
 \vspace{0.225\baselineskip}}
