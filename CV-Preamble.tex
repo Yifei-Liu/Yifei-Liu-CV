@@ -125,22 +125,31 @@ includefoot]{geometry}
 \usepackage{xunicode}
 \usepackage{xltxtra}
 
+% Next setmainfont line: 2023/08/13 For Mário Portuguese name
+
 % \homepage
 % \usepackage{moderncv}
+
+% 2024/04/02 Fix Font shape `U/wasy/m/n' in size <10.5> not available warnings
+\usepackage{anyfontsize}
 
 \usepackage{unicode-math}
 % Font: Use "Tinos" as the main typeface (\textnormal{}, \normalfont).
 % The "Tinos" fonts are released under the Apache License Version 2.0,
 % and can be downloaded for free at <http://www.fontsquirrel.com/fonts/tinos>.
 % Symbol table: <http://www.fileformat.info/info/unicode/font/tinos/grid.htm>
-% Use TimesNewRoman instead 05/26/2021
-\setmainfont
-[Path=./Fonts/TimesNewRoman/,
-Extension = .ttf,
-ItalicFont=times-new-roman-italic,
-BoldFont=times-new-roman-bold,
-BoldItalicFont=times-new-roman-bold-italic]
-{times-new-roman}
+
+% Use Native TimesNewRoman instead 08/13/2023 to support Mário Portuguese name
+\setmainfont{Times New Roman}
+
+% Use TimesNewRoman instead 05/26/2021 (Note 08/13/2023 this cannot support Portuguese characters)
+%\setmainfont
+%[Path=./Fonts/TimesNewRoman/,
+%Extension = .ttf,
+%ItalicFont=times-new-roman-italic,
+%BoldFont=times-new-roman-bold,
+%BoldItalicFont=times-new-roman-bold-italic]
+%{times-new-roman}
 
 \setmathfont
 [   Path=./Fonts/XITS/,
@@ -209,6 +218,13 @@ BoldItalicFont=FreeSerifBoldItalic]
 {Page}~{\thepage}~of~\pageref{LastPage}%
 \hfill{\color{red}DRAFT~\Timestamp}}
 \fi
+
+% Yifei self-defined macros 
+\newcommand{\ie}                {\emph{i.e.},\xspace}
+\newcommand{\eg}                {\emph{e.g.},\xspace}
+\newcommand{\etal}              {\emph{et~al.}\xspace}
+\newcommand{\naive}             {na\"{\i}ve\xspace}
+\newcommand{\Naive}             {Na\"{\i}ve\xspace}
 
 \makeatletter
 \def\ps@plain{%
