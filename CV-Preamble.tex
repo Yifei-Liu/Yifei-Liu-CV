@@ -10,6 +10,9 @@
 \nonstopmode
 \fi
 
+% 08/02/2024 prevent page breaks immediately after section headings
+\usepackage{needspace}
+
 % Geometry package for page margins.
 % 05/27/2021 Set 1 inch margins for 4 sides
 \usepackage[
@@ -23,6 +26,9 @@ top=0.8in,
 bottom=0.8in,
 nohead,
 includefoot]{geometry}
+
+% for Github and LinkedIn icons/logos
+\usepackage{fontawesome5}
 
 % PDF settings and properties.
 \usepackage{apacite}
@@ -269,6 +275,16 @@ BoldItalicFont=FreeSerifBoldItalic]
 {\UseSectionFont\raggedright{#1}}%
 &}
 
+% 08/02/2024: New section marco with needspace
+% \needspace{4\baselineskip} ensures that at least four lines of text can fit on the current page after the section heading. If this space is not available, the section will automatically start on a new page.
+
+% \renewcommand{\section}[3]{%
+%     \\[-1em]\pdfbookmark[2]{#2}{#3}\\%
+%     {\UseSectionFont\raggedright{#1}}%
+%     \needspace{4\baselineskip} % Ensure at least 4 lines fit on the page
+%     &%
+% }
+
 % Macro: subsection.
 % \renewcommand{\subsection}[3]{\par~\vskip-\baselineskip%
 % \pdfbookmark[3]{#2}{#3}\par%
@@ -277,10 +293,21 @@ BoldItalicFont=FreeSerifBoldItalic]
 
 \renewcommand{\subsection}[3]{
 \par~\vskip-\baselineskip%
-\vspace{0.225\baselineskip}
+%\vspace{0.05\baselineskip}% Reduced vertical space before subsection, prev 0.225
 \pdfbookmark[3]{#2}{#3}\par%
-{\UseSubSectionFont\raggedright{#1}}%
-\vspace{0.225\baselineskip}}
+{\UseSubSectionFont\raggedright{#1}}
+}%
+%\vspace{0.05\baselineskip}}% Reduced vertical space after subsection, prev 0.225
+
+% 08/02/2024: subsection macro with needspace
+% \renewcommand{\subsection}[3]{%
+%     \needspace{3\baselineskip} % Adjust this value based on how much space you want to ensure
+%     \par~\vskip-\baselineskip%
+%     \vspace{0.225\baselineskip}%
+%     \pdfbookmark[3]{#2}{#3}\par%
+%     {\UseSubSectionFont\raggedright{#1}}%
+%     \vspace{0.225\baselineskip}%
+% }
 
 % Macro: BigGap, BigGapNoBreak (big vertical gap between items in the same section).
 \newcommand{\BigGap}{\\[-1.75mm]~&}

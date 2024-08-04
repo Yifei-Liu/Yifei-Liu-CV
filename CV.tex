@@ -24,7 +24,8 @@
 % \documentclass[a4paper,10pt,oneside]{article}
 %\documentclass[letterpaper,10pt,oneside]{article}
 % change font size
-\documentclass[letterpaper,10pt,oneside]{article}
+% Use a4paper instead of letterpaper to avoid the last blank page
+\documentclass[a4paper,10pt,oneside]{article}
 
 % \documentclass[letterpaper,10pt,oneside]{moderncv}
 % \moderncvstyle{classic}  % Choose the style, options include: 'casual' (default), 'classic', 'oldstyle', 'banking'
@@ -46,7 +47,7 @@
 % CV Info (to be customized).
 \newcommand{\CVAuthor}{Yifei Liu}
 \newcommand{\CVTitle}{Yifei Liu Curriculum Vitae}
-\newcommand{\CVNote}{CV updated on {\DatestampYM{2023}{06}} }
+\newcommand{\CVNote}{CV updated on {\DatestampYM{2024}{08}} }
 % \newcommand{\CVWebpage}{\homepage{https://www.fsl.cs.stonybrook.edu/\textasciitilde yifei/}}
 
 
@@ -87,18 +88,18 @@
 % {Stony Brook, NY 11794}
 % \,\BulletSymbol\,
 \href{mailto:yifeliu@cs.stonybrook.edu}
-Email: {yifeliu@cs.stonybrook.edu}
+{\faIcon{envelope} yifeliu@cs.stonybrook.edu}
 \,\BulletSymbol\,
-Cell: +1 631-710-8377
+\faIcon{mobile-alt} +1 631-710-8377
 \par
 \href{https://github.com/Yifei-Liu}
-{github.com/Yifei-Liu}
+{\faIcon{github} github.com/Yifei-Liu}
 \,\BulletSymbol\,
 \href{https://www.fsl.cs.stonybrook.edu/~yifei/}
-{https://www.fsl.cs.stonybrook.edu/\textasciitilde yifei/}
+{\faIcon{globe} https://www.fsl.cs.stonybrook.edu/\textasciitilde yifei/}
 \,\BulletSymbol\,
 \href{https://www.linkedin.com/in/yifei-liu/}
-{linkedin.com/in/yifei-liu}
+{\faIcon{linkedin} linkedin.com/in/yifei-liu}
 %\newline
 %Visa: F-1 Student
 %\,\BulletSymbol\,
@@ -123,17 +124,25 @@ Stony Brook, NY
 Ph.D. in
 {Computer Science} (Advisor: Prof. Erez Zadok)
 \hfill
-08/2019 -- Present
+08/2019 -- 08/2025 (expected)
+
+% \BulletItem
+% M.S. in
+% {Computer Science} (obtained on the way to Ph.D.)
+% \hfill
+% 08/2019 -- 12/2021
+
 \begin{detail}
 \BulletItem
-CGPA: 3.93 / 4.0 
-\BulletItem
-\emph{Relevant Courses}: CSE506 Operating Systems; 
-CSE512  Machine Learning; CSE532 Theory of Database Systems; CSE548 Analysis of Algorithms
+GPA: 3.93 / 4.0 
+% \BulletItem
+% \emph{Relevant Courses}: CSE506 Operating Systems; 
+% CSE512  Machine Learning; CSE532 Theory of Database Systems; CSE548 Analysis of Algorithms
 
 \end{detail}
 
-\BigGap
+\GapNoBreak
+% \BigGap
 
 %\href{http://english.hust.edu.cn/}
 {\textbf{Huazhong University of Science and Technology}}
@@ -150,7 +159,9 @@ M.Eng. in
 \begin{detail}
 \end{detail}
 
-\BigGap
+\GapNoBreak
+
+% \BigGap
 %\href{http://www.hzau.edu.cn/en/HOME.htm}
 {\textbf{Huazhong Agricultural University}}
 \hfill
@@ -168,6 +179,7 @@ B.Eng. in
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %% RESEARCH EXPERIENCE %%
 %%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section
 {Experience}
 {Experience}
@@ -185,18 +197,19 @@ Present
 
 \GapNoBreak
 \BulletItem
-Analyzed the effectiveness of code coverage and proposed input and output coverage in the context of file system testing
+Developed Metis, a file system model-checking framework that identified over 12 bugs in Linux kernel file systems with comprehensive input and state coverage
 
 \GapNoBreak
 \BulletItem
-Developed a model checking framework to test Linux file systems thoroughly and automatically
+Developed RefFS, a reliable user-space file system with state-saving and restoration features, achieving 3-28x better performance than other mature file systems in model checking
 
-\GapNoBreak
-\BulletItem
-Designed and evaluated multi-tier caching systems with intelligent MRC point selection to identify optimal cache configurations efficiently
+% \GapNoBreak
+% \BulletItem
+% Designed and evaluated multi-tier caching systems with intelligent MRC point selection to identify optimal cache configurations efficiently
 
 % Samsung Semiconductor 
-\BigGap
+\GapNoBreak
+
 {\textbf{Samsung Semiconductor, Inc.}}
 \hfill
 San Jose, CA
@@ -210,30 +223,27 @@ San Jose, CA
 \BulletItem
 Implemented the custom PostgreSQL plans and paths to offload aggregate operations to SmartSSD, for enhancing the performance of queries
 
-\GapNoBreak
-\BulletItem
-Investigated the feasibility of offloading PostgreSQL aggregate and join operations to computational storage drive SmartSSD
+% \GapNoBreak
+% \BulletItem
+% Investigated the feasibility of offloading PostgreSQL aggregate and join operations to computational storage drive SmartSSD
 
 %Stony Brook University
-\BigGap
-{\textbf{Stony Brook University}}
-\hfill
-Stony Brook, NY
+% \GapNoBreak
+% {\textbf{Stony Brook University}}
+% \hfill
+% Stony Brook, NY
 
-\emph{Graduate Teaching Assistant}
-\hfill
-08/2019 --
-05/2020
+% \emph{Graduate Teaching Assistant}
+% \hfill
+% 08/2019 --
+% 05/2020
 
-\GapNoBreak
-\BulletItem
-CSE376 Advanced Systems Programming in Unix/C (S'21, S'20) 
-\GapNoBreak
-\BulletItem
-CSE306 Operating Systems (F'19) 
+% \GapNoBreak
+% \BulletItem
+% CSE306 Operating Systems and CSE376 Advanced Systems Programming in Unix/C 
 
 %Wuhan National Laboratory for Optoelectronics
-\BigGap
+\GapNoBreak
 {\textbf{Wuhan National Laboratory for Optoelectronics}}
 \hfill
 Wuhan, China
@@ -245,16 +255,16 @@ Wuhan, China
 
 \GapNoBreak
 \BulletItem
-Used deep learning hash to design and implement a metadata system to integrate high-precision and low-latency content-based semantic queries in storage systems
-\GapNoBreak
-\BulletItem
-Proposed a framework for assessing image ``dark data'' (unstructured, untapped data) based on a novel semantic hash ranking (SHR) algorithm
-\GapNoBreak
-\BulletItem
-Performed theoretical analysis on hash-based graphs to facilitate rank and graph algorithms 
+Designed and implemented a storage system that uses deep learning hashing and a graph database to integrate high-precision, low-latency content-based semantic queries
+% \GapNoBreak
+% \BulletItem
+% Implemented a framework for assessing image ``dark data'' (unstructured, untapped data) based on a novel semantic hash ranking (SHR) algorithm
+% \GapNoBreak
+% \BulletItem
+% Performed theoretical analysis on hash-based graphs to facilitate rank and graph algorithms 
 
 %Tencent
-\BigGap
+\GapNoBreak
 {\textbf{Tencent Cloud}} 
 \hfill
 Shenzhen, China
@@ -269,10 +279,11 @@ Shenzhen, China
 %Worked in the Cloud Block Storage (CBS) team of the Cloud Foundation Department, Technology Engineering Group (TEG)
 \GapNoBreak
 \BulletItem
-Predicted disk failures with disk data collected via machine learning algorithms to achieve high precision and recall
-\GapNoBreak
-\BulletItem
-Built infrastructure for collecting long-term disk S.M.R.A.T. data from over 10,000 servers in Tencent data centers
+Developed infrastructure to collect long-term disk S.M.A.R.T. data from over 10,000 servers, utilizing machine learning algorithms to predict disk failures with high precision and recall
+
+% \GapNoBreak
+% \BulletItem
+% Built infrastructure for collecting long-term disk S.M.R.A.T. data from over 10,000 servers in Tencent data centers
 % \GapNoBreak
 % \BulletItem
 % Tested various cache replacement policies on Tencent application traces
@@ -282,9 +293,11 @@ Built infrastructure for collecting long-term disk S.M.R.A.T. data from over 10,
 %%%%%%%%%%%%%%%%%%
 
 \section
-{Publications}
-{Publications}
-{PDF:Publications}
+{Selected Publications}
+{Selected Publications}
+{PDF:SelectedPublications}
+
+% \textbf{Summary:} 3 peer-reviewed journals, 9 peer-reviewed conference/workshop papers, 2 conference posters, 2 granted patents 
 
 \textbf{Google Scholar Profile:} \href{https://scholar.google.com/citations?user=WNu87vQAAAAJ}{scholar.google.com/citations?user=WNu87vQAAAAJ}
 
@@ -325,23 +338,24 @@ Yu Liu, Yangtao Wang, Ke Zhou, Yujuan Yang, and \underline{Yifei Liu}.
 \underline{Yifei Liu}, Manish Adkar, Gerard Holzmann, Geoff Kuenning, Pei Liu, Scott Smolka, Wei Su and Erez Zadok.
 ``Metis: File System Model Checking via Versatile Input and State Exploration.''
 In \textit{the 22nd USENIX Conference on File and Storage Technologies
-\textbf{(FAST '24)}}, Santa Clara, CA,
+\textbf{(FAST)}}, % Santa Clara, CA,
 \DatestampY{2024}. 
 
 % Z-Method paper MASCOTS '23
 \NumberedItem{[2]}
 Tyler Estro, Mário Antunes, Pranav Bhandari, Anshul Gandhi, Geoff Kuenning, \underline{Yifei Liu}, Carl Waldspurger, Avani Wildani and Erez Zadok.
 ``Guiding Simulations of Multi-Tier Storage Caches Using Knee Detection.''
-In \textit{the 31st International Symposium on the Modeling, Analysis, and Simulation of Computer and Telecommunication Systems \textbf{(MASCOTS '23)}}, Stony Brook, NY,
+In \textit{the 31st International Symposium on the Modeling, Analysis, and Simulation of Computer and Telecommunication Systems \textbf{(MASCOTS)}}, % Stony Brook, NY,
 \DatestampY{2023}. 
 
-% \Gap
+% Page break gap
+\Gap
 
 % IOCov paper HotStorage '23
 \NumberedItem{[3]}
 \underline{Yifei Liu}, Gautam Ahuja, Geoff Kuenning, Scott Smolka, and Erez Zadok.
 ``Input and Output Coverage Needed in File System Testing.''
-In \textit{the 15th ACM Workshop on Hot Topics in Storage and File Systems \textbf{(HotStorage '23)}}, Boston, MA,
+In \textit{the 15th ACM Workshop on Hot Topics in Storage and File Systems \textbf{(HotStorage)}}, % Boston, MA,
 \DatestampY{2023}.
 
 % \Gap
@@ -350,7 +364,7 @@ In \textit{the 15th ACM Workshop on Hot Topics in Storage and File Systems \text
 \NumberedItem{[4]}
 Wei Su, \underline{Yifei Liu}, Gomathi Ganesan, Gerard Holzmann, Scott Smolka, Erez Zadok, and Geoff Kuenning.
 ``Model-Checking Support for File System Development.''
-In \textit{the 13th ACM Workshop on Hot Topics in Storage and File Systems \textbf{(HotStorage '21)}}, Virtual,
+In \textit{the 13th ACM Workshop on Hot Topics in Storage and File Systems \textbf{(HotStorage)}}, % Virtual,
 \DatestampY{2021}.
 
 % \Gap
@@ -359,7 +373,7 @@ In \textit{the 13th ACM Workshop on Hot Topics in Storage and File Systems \text
 \NumberedItem{[5]}
 Yu Liu, Hong Jiang, Yangtao Wang, Ke Zhou, \underline{Yifei Liu}, and Li Liu.
 ``Content Sifting Storage: Achieving Fast Read for Large-scale Image Dataset Analysis.''
-In \textit{the 57th Design Automation Conference \textbf{(DAC '20)}}, San Francisco, CA,
+In \textit{the 57th Design Automation Conference \textbf{(DAC)}}, % San Francisco, CA,
 \DatestampY{2020}.
 
 % \Gap
@@ -368,7 +382,7 @@ In \textit{the 57th Design Automation Conference \textbf{(DAC '20)}}, San Franci
 \NumberedItem{[6]}
 Yu Liu, Yangtao Wang, Ke Zhou, Yujuan Yang, \underline{Yifei Liu}, Jingkuan Song, and Zhili Xiao.
 ``A Framework for Image Dark Data Assessment.''
-In \textit{the 3rd APWeb-WAIM joint conference on Web and Big Data \textbf{(APWeb-WAIM '19)}}, Chengdu, China,
+In \textit{the 3rd APWeb-WAIM joint conference on Web and Big Data \textbf{(APWeb-WAIM)}}, % Chengdu, China,
 \DatestampY{2019}. \textbf{(Best Paper Runner-Up)}
 
 % \Gap
@@ -377,47 +391,47 @@ In \textit{the 3rd APWeb-WAIM joint conference on Web and Big Data \textbf{(APWe
 \NumberedItem{[7]}
 Yangtao Wang, Yu Liu, \underline{Yifei Liu}, Ke Zhou, Yujuan Yang, Jiangfeng Zeng, Xiaodong Xu, and Zhili Xiao.
 ``Analysis and Management to Hash-Based Graph and Rank.''
-In \textit{the 3rd APWeb-WAIM joint conference on Web and Big Data \textbf{(APWeb-WAIM '19)}}, Chengdu, China,
+In \textit{the 3rd APWeb-WAIM joint conference on Web and Big Data \textbf{(APWeb-WAIM)}}, % Chengdu, China,
 \DatestampY{2019}. 
 
 % \Gap
 
-% Bayesian Web Service Recommendation paper SCC '18
-\NumberedItem{[8]}
-Jianxiao Liu, Zonglin Tian, \underline{Yifei Liu}, and Liang Zhao.
-``Research of Web Service Recommendation Using Bayesian Network Reasoning.''
-In \textit{the 15th International Conference on Services Computing \textbf{(SCC '18)}}, Seattle, WA,
-\DatestampY{2018}. 
+% % Bayesian Web Service Recommendation paper SCC '18
+% \NumberedItem{[8]}
+% Jianxiao Liu, Zonglin Tian, \underline{Yifei Liu}, and Liang Zhao.
+% ``Research of Web Service Recommendation Using Bayesian Network Reasoning.''
+% In \textit{the 15th International Conference on Services Computing \textbf{(SCC '18)}}, % Seattle, WA,
+% \DatestampY{2018}. 
 
-% \Gap
+% % \Gap
 
-% Line detection Agro-geoinformatics '15
-\NumberedItem{[9]}
-Pujuan Shi, Yihang Fang, Chengda Lin, \underline{Yifei Liu}, and Ruifang Zhai.
-``A New Line Detection Algorithm - Automatic Measurement of Character Parameter of Rapeseed Plant by LSD.''
-In \textit{the 4th International Conference on Agro-Geoinformatics \textbf{(Agro-Geoinformatics '15)}}, Istanbul, Turkey,
-\DatestampY{2015}. 
+% % Line detection Agro-geoinformatics '15
+% \NumberedItem{[9]}
+% Pujuan Shi, Yihang Fang, Chengda Lin, \underline{Yifei Liu}, and Ruifang Zhai.
+% ``A New Line Detection Algorithm - Automatic Measurement of Character Parameter of Rapeseed Plant by LSD.''
+% In \textit{the 4th International Conference on Agro-Geoinformatics \textbf{(Agro-Geoinformatics '15)}}, % Istanbul, Turkey,
+% \DatestampY{2015}. 
 
-\subsection
-{Posters}
-{Posters}
-{PDF:Posters}
+% \subsection
+% {Posters}
+% {Posters}
+% {PDF:Posters}
 
-% MCFS OSDI '23 Poster
-\NumberedItem{[1]}
-\underline{Yifei Liu}, Gerard Holzmann, Geoff Kuenning, Scott Smolka, and Erez Zadok.
-``The Case for Model Checking Emerging File Systems.''
-In \textit{the Poster Presentation of the 17th USENIX Symposium on Operating Systems Design and Implementation \textbf{(OSDI '23)}}, Boston, MA,
-\DatestampY{2023}.
+% % MCFS OSDI '23 Poster
+% \NumberedItem{[1]}
+% \underline{Yifei Liu}, Gerard Holzmann, Geoff Kuenning, Scott Smolka, and Erez Zadok.
+% ``The Case for Model Checking Emerging File Systems.''
+% In \textit{the Poster Presentation of the 17th USENIX Symposium on Operating Systems Design and Implementation \textbf{(OSDI '23)}}, % Boston, MA,
+% \DatestampY{2023}.
 
-% \Gap
+% % \Gap
 
-% IOCov FAST '23 Poster
-\NumberedItem{[2]}
-\underline{Yifei Liu}, Gerard Holzmann, Geoff Kuenning, Scott Smolka, and Erez Zadok.
-``Exploring File Systems for Input Coverage.''
-In \textit{the Poster Presentation of the 21st USENIX Conference on File and Storage Technologies \textbf{(FAST '23)}}, Santa Clara, CA,
-\DatestampY{2023}.
+% % IOCov FAST '23 Poster
+% \NumberedItem{[2]}
+% \underline{Yifei Liu}, Gerard Holzmann, Geoff Kuenning, Scott Smolka, and Erez Zadok.
+% ``Exploring File Systems for Input Coverage.''
+% In \textit{the Poster Presentation of the 21st USENIX Conference on File and Storage Technologies \textbf{(FAST '23)}}, % Santa Clara, CA,
+% \DatestampY{2023}.
 
 \subsection
 {Patents}
@@ -425,79 +439,12 @@ In \textit{the Poster Presentation of the 21st USENIX Conference on File and Sto
 {PDF:Patents}
 
 \NumberedItem{[1]}
-Ke Zhou, Yu Liu, Yujuan Yang, Hua Wang, Chunhua Li, Yangtao Wang, \underline{Yifei Liu}. Method for valuation of image dark data based on similarity hashing. U.S. Patent US11,138,479B2, Filed: 07/30/2019. Granted: 10/05/2021.
+Ke Zhou, Yu Liu, Yujuan Yang, Hua Wang, Chunhua Li, Yangtao Wang, \underline{Yifei Liu}. Method for valuation of image dark data based on similarity hashing. U.S. Patent US11,138,479B2, Granted: 10/05/2021. % Filed: 07/30/2019. 
 
 \Gap
 
 \NumberedItem{[2]}
-Ke Zhou, \underline{Yifei Liu}, Yu Liu, Yangtao Wang, Yujuan Yang. Image query method and system based on content semantic metadata. Chinese Patent CN110413807B, Filed: 06/24/2019. Granted: 04/20/2021.
-
-%%%%%%%%%%%%%%%%%%%%%
-%% SERVICE %%
-%%%%%%%%%%%%%%%%%%%%%
-\section
-{Service}
-{Service}
-{PDF:Service}
-
-\subsection
-{Journal Reviewer}
-{Journal Reviewer}
-{PDF:JournalReviewer}
-
-\BulletItem
-ACM Transactions on Architecture and Code Optimization (TACO)
-
-\subsection
-{Artifact Evaluation Committee}
-{Artifact Evaluation Committee}
-{PDF:AEC}
-
-\BulletItem
-USENIX OSDI '23, USENIX ATC '23
-
-%%%%%%%%%%%%%%%%%%%%%
-%% PRESENTATIONS %%
-%%%%%%%%%%%%%%%%%%%%%
-\section
-{Talks}
-{Talks}
-{PDF:Talks}
-\BulletItem
-\textbf{\textit{Metis: File System Model Checking via Versatile Input and State Exploration}}
-
-\SubBulletItem
-Graduate Research Day, Stony Brook, NY, Mar. 2024.
-
-\SubBulletItem
-USENIX FAST Conference, Santa Clara, CA, Feb. 2024.
-
-\GapNoBreak
-
-\BulletItem
-\textbf{\textit{Input and Output Coverage Needed in File System Testing}}
-\SubBulletItem
-ACM HotStorage Workshop, Boston, MA, Jul. 2023.
-
-\GapNoBreak
-
-\BulletItem
-\textbf{\textit{Model-Checking Support for File System Development}}
-
-\SubBulletItem
-Dutch Model Checking Day, Virtual, Mar. 2022. (Joint talk with Prof. Scott Smolka)
-
-\SubBulletItem
-ACM HotStorage Workshop, Virtual, Jul. 2021. (Joint talk with Wei Su)
-
-\GapNoBreak
-
-\BulletItem
-\textbf{\textit{OS Support for File System Model Checking}}
-
-\SubBulletItem
-Graduate Research Day, Virtual, Feb. 2021.
-
+Ke Zhou, \underline{Yifei Liu}, Yu Liu, Yangtao Wang, Yujuan Yang. Image query method and system based on content semantic metadata. Chinese Patent CN110413807B, Granted: 04/20/2021. % Filed: 06/24/2019.
 
 %%%%%%%%%%%%
 %% SKILLS %%
@@ -514,12 +461,12 @@ Graduate Research Day, Virtual, Feb. 2021.
 {PDF:ProgrammingLanguages}
 
 \BulletItem
-Familiar (5+ years of experience): C, C++, Python, Bash
+\textbf{Fluent:} C, C++, Python, Bash, Promela
 
 \GapNoBreak
 
 \BulletItem
-Intermediate (1--4 years): MATLAB, SQL, Java, Cypher, JavaScript, Prolog
+\textbf{Intermediate:} SQL, Java, MATLAB, Cypher, JavaScript, Prolog
 
 % \GapNoBreak
 
@@ -532,30 +479,29 @@ Intermediate (1--4 years): MATLAB, SQL, Java, Cypher, JavaScript, Prolog
 {PDF:Technologies}
 
 \BulletItem
-\textbf{Databases:} MySQL (3 years), Neo4j (2 years), PostgreSQL ($<$ 1 year), HBase ($<$ 1 year)
+\textbf{Databases:} MySQL, Neo4j, PostgreSQL, HBase
 
 \GapNoBreak
 
 \BulletItem
-\textbf{File and Storage:} Linux VFS (4 years), OpenStack Swift (2 years), HDFS ($<$ 1 year)
+\textbf{File and Storage:} Linux VFS and kernel file systems, OpenStack Swift, HDFS
+
+% \GapNoBreak
+% \BulletItem
+% \textbf{Operating Systems:} Linux kernel and user-space development
 
 \GapNoBreak
 
 \BulletItem
-\textbf{Operating Systems:} Linux (9 years), Linux kernel development (4 years)
+\textbf{Other Tools:} Git, GNU make, CMake, GDB, Elasticsearch, Hadoop, Spark, {\LaTeX}
 
-\GapNoBreak
+% \subsection
+% {Human Languages}
+% {Human Languages}
+% {PDF:HumanLanguages}
 
-\BulletItem
-\textbf{Tools:} Git (6 years), {\LaTeX} (5 years), Makefile (5 years), GDB (4 years), Vim (3 years), Elasticsearch (1 year), CMake (1 year), Hadoop (1 year), Spark ($<$ 1 year)
-
-\subsection
-{Human Languages}
-{Human Languages}
-{PDF:HumanLanguages}
-
-\BulletItem
-Chinese (Native), English (Fluent)
+% \BulletItem
+% Chinese (Native), English (Fluent)
 \GapNoBreak
 
 %%%%%%%%%%%%%%%%%%%%%
@@ -566,53 +512,58 @@ Chinese (Native), English (Fluent)
 {Projects}
 {PDF:Projects}
 
-\textbf{IOCov: Input and Output Coverage for File System Testing}
+\href{https://github.com/sbu-fsl/IOCov}
+{\textbf{IOCov \faIcon{github}: Input and Output Coverage for File System Testing}}
 \hfill
 2022 -- 
-Present
+2024
 
 \BulletItem
-A framework to compute syscall input and output coverage of file system test suites
+A framework for computing syscall input and output coverage in file system test suites
 
 \GapNoBreak
 
-\textbf{VeriFS: a Novel File System for Seamless Model Checking Integration}
+\href{https://github.com/sbu-fsl/Metis}
+{\textbf{Metis \faIcon{github}: A Versatile Framework for File System Model Checking}}
 \hfill
 2020 -- 
-Present
+2024
 
 \BulletItem
-An in-memory FUSE file system to save and restore its entire file system state 
+A framework for thoroughly checking Linux file systems with minimal constraints
 
 \GapNoBreak
 
-\textbf{MCFS: Model Checking File Systems}
+\href{https://github.com/sbu-fsl/RefFS}
+{\textbf{RefFS \faIcon{github}: A Fast and Reliable File System for Model Checking Reference}}
 \hfill
 2020 -- 
-Present
+2024
 
 \BulletItem
-A model-checking framework to test file systems thoroughly with few constraints
+An in-memory FUSE file system capable of independently saving and restoring its entire state
 
-\GapNoBreak
 
-\textbf{MTCache: Multi-Tier Caching Simulation and Optimization}
-\hfill
-2020 -- 
-2022
+% \GapNoBreak
 
-\BulletItem
-A point selection method to identify optimal multi-tier caching configurations 
+% \textbf{MTCache: Simulation and Optimization of Multi-Tier Storage Caching}
+% \hfill
+% 2020 -- 
+% 2022
 
-\GapNoBreak
+% \BulletItem
+% A point selection technique for determining optimal configurations in multi-tier caching
 
-\textbf{SwiftGraph: Bringing Deep Learning Hash to Storage Systems}
-\hfill
-2017 -- 
-2019
+% \GapNoBreak
 
-\BulletItem
-A system middleware for content-based semantic queries in storage systems
+
+% \textbf{SwiftGraph: Bringing Deep Learning Hash to Storage Systems}
+% \hfill
+% 2017 -- 
+% 2019
+
+% \BulletItem
+% A system middleware for content-based semantic queries in storage systems
 
 % \GapNoBreak
 
@@ -623,6 +574,91 @@ A system middleware for content-based semantic queries in storage systems
 
 % \BulletItem
 % A pipeline to collect disk information and predict disk failures by machine learning
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%% PRESENTATIONS %%
+%%%%%%%%%%%%%%%%%%%%%
+\section
+{Talks}
+{Talks}
+{PDF:Talks}
+\BulletItem
+\textbf{\textit{Metis: File System Model Checking via Versatile Input and State Exploration}}
+
+\SubBulletItem
+USENIX FAST 2024, Graduate Research Day 2024 %, Stony Brook, NY, Mar. 2024.
+
+% \SubBulletItem
+% USENIX FAST Conference, Santa Clara, CA, Feb. 2024.
+
+\GapNoBreak
+
+\BulletItem
+\textbf{\textit{Input and Output Coverage Needed in File System Testing}}
+\SubBulletItem
+ACM HotStorage 2023 %, Boston, MA, Jul. 2023.
+
+\GapNoBreak
+
+\BulletItem
+\textbf{\textit{Model-Checking Support for File System Development}}
+
+\SubBulletItem
+ACM HotStorage 2021, Dutch Model Checking Day 2022
+% Virtual, Mar. 2022. (Joint talk with Prof. Scott Smolka)
+% \SubBulletItem
+% ACM HotStorage Workshop, Virtual, Jul. 2021. (Joint talk with Wei Su)
+
+% \GapNoBreak
+
+% \BulletItem
+% \textbf{\textit{OS Support for File System Model Checking}}
+
+% \SubBulletItem
+% Graduate Research Day 2021 %, Virtual, Feb. 2021.
+
+%%%%%%%%%%%%%%%%%%%%%
+%% SERVICE %%
+%%%%%%%%%%%%%%%%%%%%%
+\section
+{Service}
+{Service}
+{PDF:Service}
+
+% \subsection
+% {Journal Reviewer}
+% {Journal Reviewer}
+% {PDF:JournalReviewer}
+
+\textbf{Journal Reviewer:}
+ACM Trans. on Architecture and Code Optimization (TACO), IEEE Access
+
+% \subsection
+% {Artifact Evaluation Committee}
+% {Artifact Evaluation Committee}
+% {PDF:AEC}
+
+\textbf{Artifact Evaluation Committee:}
+USENIX OSDI '23, USENIX ATC '23
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEACHING EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Teaching}
+{Teaching}
+{PDF:Teaching}
+
+Teaching Assistant for CSE376 Advanced Systems Programming in Unix/C 
+\hfill
+S '20, S '21
+
+Teaching Assistant for CSE306 Operating Systems 
+\hfill
+F '19
 
 %%%%%%%%%%%%%%%%%%%%%
 %% ACADEMIC AWARDS %%
@@ -636,12 +672,8 @@ A system middleware for content-based semantic queries in storage systems
 \BulletItem
 Finalist, Interdisciplinary Contest in Modeling (MCM/ICM), USA, 2015.
 
-\GapNoBreak
-
 \BulletItem
 First Prize, National Postgraduate Mathematic Contest in Modeling, China, 2014.
-
-\GapNoBreak
 
 \BulletItem
 First Prize, Contemporary Undergraduate Mathematical Contest in Modeling, China, 2014.
@@ -676,7 +708,6 @@ First Prize, Contemporary Undergraduate Mathematical Contest in Modeling, China,
 %%%%%%%%%%%%%%%%
 %% REFERENCES %%
 %%%%%%%%%%%%%%%%
-
 \end{body}
 
 %%%%%%%%%%%
@@ -686,8 +717,8 @@ First Prize, Contemporary Undergraduate Mathematical Contest in Modeling, China,
 %\begin{flushright}
 %\UseNoteFont%
 %[\textit{\CVNote}]%
-%\hspace{2.0mm}\null
+% \hspace{2.0mm}\null
 %\end{flushright}
-
 \label{LastPage}~
+
 \end{document}
