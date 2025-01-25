@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\section
+{Selected Publications}
+{Selected Publications}
+{PDF:SelectedPublications}
+
+% \textbf{Summary:} 3 peer-reviewed journals, 9 peer-reviewed conference/workshop papers, 2 conference posters, 2 granted patents 
+
+\textbf{Google Scholar Profile:} \href{https://scholar.google.com/citations?user=WNu87vQAAAAJ}{scholar.google.com/citations?user=WNu87vQAAAAJ}
+
+\subsection
+{Journal Articles}
+{Journal Articles}
+{PDF:JournalArticles}
+
+\NumberedItem{[1]}
+Tyler Estro, Mário Antunes, Pranav Bhandari, Anshul Gandhi, Geoff Kuenning, \underline{Yifei Liu}, Carl Waldspurger, Avani Wildani and Erez Zadok.
+``Accelerating Multi-Tier Storage Cache Simulations Using Knee Detection.'' 
+\textit{\textbf{Performance Evaluation}},
+\DatestampY{2024}.
+
+% \Gap
+
+\NumberedItem{[2]}
+Ke Zhou, Yangtao Wang, Yu Liu, Yujuan Yang, \underline{Yifei Liu}, Guoliang Li, Lianli Gao, and Zhili Xiao.
+``A Framework for Image Dark Data Assessment.'' 
+\textit{\textbf{World Wide Web}},
+\DatestampY{2020}.
+
+% \Gap
+
+\NumberedItem{[3]}
+Yu Liu, Yangtao Wang, Ke Zhou, Yujuan Yang, and \underline{Yifei Liu}.
+``Semantic-aware Data Quality Assessment for Image Big Data.'' 
+\textit{\textbf{Future Generation Computer Systems}},
+\DatestampY{2020}.
+
+\subsection
+{Conference and Workshop Papers}
+{Conference and Workshop Papers}
+{PDF:ConferencePapers}
+
+% Metis RefFS paper FAST '24
+\NumberedItem{[1]}
+\underline{Yifei Liu}, Manish Adkar, Gerard Holzmann, Geoff Kuenning, Pei Liu, Scott Smolka, Wei Su and Erez Zadok.
+``Metis: File System Model Checking via Versatile Input and State Exploration.''
+In \textit{the 22nd USENIX Conference on File and Storage Technologies
+\textbf{(FAST)}}, % Santa Clara, CA,
+\DatestampY{2024}. \textbf{(Received all Artifact Evaluation badges: Available, Functional, and Reproduced)}
+
+% Z-Method paper MASCOTS '23
+\NumberedItem{[2]}
+Tyler Estro, Mário Antunes, Pranav Bhandari, Anshul Gandhi, Geoff Kuenning, \underline{Yifei Liu}, Carl Waldspurger, Avani Wildani and Erez Zadok.
+``Guiding Simulations of Multi-Tier Storage Caches Using Knee Detection.''
+In \textit{the 31st International Symposium on the Modeling, Analysis, and Simulation of Computer and Telecommunication Systems \textbf{(MASCOTS)}}, % Stony Brook, NY,
+\DatestampY{2023}. 
+
+% Page break gap
+\Gap
+
+% IOCov paper HotStorage '23
+\NumberedItem{[3]}
+\underline{Yifei Liu}, Gautam Ahuja, Geoff Kuenning, Scott Smolka, and Erez Zadok.
+``Input and Output Coverage Needed in File System Testing.''
+In \textit{the 15th ACM Workshop on Hot Topics in Storage and File Systems \textbf{(HotStorage)}}, % Boston, MA,
+\DatestampY{2023}.
+
+% \Gap
+
+% MCFS paper HotStorage '21
+\NumberedItem{[4]}
+Wei Su, \underline{Yifei Liu}, Gomathi Ganesan, Gerard Holzmann, Scott Smolka, Erez Zadok, and Geoff Kuenning.
+``Model-Checking Support for File System Development.''
+In \textit{the 13th ACM Workshop on Hot Topics in Storage and File Systems \textbf{(HotStorage)}}, % Virtual,
+\DatestampY{2021}.
+
+% \Gap
+
+% CSS paper DAC '20
+\NumberedItem{[5]}
+Yu Liu, Hong Jiang, Yangtao Wang, Ke Zhou, \underline{Yifei Liu}, and Li Liu.
+``Content Sifting Storage: Achieving Fast Read for Large-scale Image Dataset Analysis.''
+In \textit{the 57th Design Automation Conference \textbf{(DAC)}}, % San Francisco, CA,
+\DatestampY{2020}.
+
+% \Gap
+
+% Dark data paper APWeb-WAIM '19
+\NumberedItem{[6]}
+Yu Liu, Yangtao Wang, Ke Zhou, Yujuan Yang, \underline{Yifei Liu}, Jingkuan Song, and Zhili Xiao.
+``A Framework for Image Dark Data Assessment.''
+In \textit{the 3rd APWeb-WAIM joint conference on Web and Big Data \textbf{(APWeb-WAIM)}}, % Chengdu, China,
+\DatestampY{2019}. \textbf{(Best Paper Runner-Up)}
+
+% \Gap
+
+% Hash graph analysis paper APWeb-WAIM '19
+\NumberedItem{[7]}
+Yangtao Wang, Yu Liu, \underline{Yifei Liu}, Ke Zhou, Yujuan Yang, Jiangfeng Zeng, Xiaodong Xu, and Zhili Xiao.
+``Analysis and Management to Hash-Based Graph and Rank.''
+In \textit{the 3rd APWeb-WAIM joint conference on Web and Big Data \textbf{(APWeb-WAIM)}}, % Chengdu, China,
+\DatestampY{2019}. 
+
+% \Gap
+
+% % Bayesian Web Service Recommendation paper SCC '18
+% \NumberedItem{[8]}
+% Jianxiao Liu, Zonglin Tian, \underline{Yifei Liu}, and Liang Zhao.
+% ``Research of Web Service Recommendation Using Bayesian Network Reasoning.''
+% In \textit{the 15th International Conference on Services Computing \textbf{(SCC '18)}}, % Seattle, WA,
+% \DatestampY{2018}. 
+
+% % \Gap
+
+% % Line detection Agro-geoinformatics '15
+% \NumberedItem{[9]}
+% Pujuan Shi, Yihang Fang, Chengda Lin, \underline{Yifei Liu}, and Ruifang Zhai.
+% ``A New Line Detection Algorithm - Automatic Measurement of Character Parameter of Rapeseed Plant by LSD.''
+% In \textit{the 4th International Conference on Agro-Geoinformatics \textbf{(Agro-Geoinformatics '15)}}, % Istanbul, Turkey,
+% \DatestampY{2015}. 
+
+% \subsection
+% {Posters}
+% {Posters}
+% {PDF:Posters}
+
+% % MCFS OSDI '23 Poster
+% \NumberedItem{[1]}
+% \underline{Yifei Liu}, Gerard Holzmann, Geoff Kuenning, Scott Smolka, and Erez Zadok.
+% ``The Case for Model Checking Emerging File Systems.''
+% In \textit{the Poster Presentation of the 17th USENIX Symposium on Operating Systems Design and Implementation \textbf{(OSDI '23)}}, % Boston, MA,
+% \DatestampY{2023}.
+
+% % \Gap
+
+% % IOCov FAST '23 Poster
+% \NumberedItem{[2]}
+% \underline{Yifei Liu}, Gerard Holzmann, Geoff Kuenning, Scott Smolka, and Erez Zadok.
+% ``Exploring File Systems for Input Coverage.''
+% In \textit{the Poster Presentation of the 21st USENIX Conference on File and Storage Technologies \textbf{(FAST '23)}}, % Santa Clara, CA,
+% \DatestampY{2023}.
+
+\subsection
+{Patents}
+{Patents}
+{PDF:Patents}
+
+\NumberedItem{[1]}
+Ke Zhou, Yu Liu, Yujuan Yang, Hua Wang, Chunhua Li, Yangtao Wang, \underline{Yifei Liu}. Method for valuation of image dark data based on similarity hashing. U.S. Patent US11,138,479B2, Granted: 10/05/2021. % Filed: 07/30/2019. 
+
+\Gap
+
+\NumberedItem{[2]}
+Ke Zhou, \underline{Yifei Liu}, Yu Liu, Yangtao Wang, Yujuan Yang. Image query method and system based on content semantic metadata. Chinese Patent CN110413807B, Granted: 04/20/2021. % Filed: 06/24/2019.
